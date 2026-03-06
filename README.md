@@ -62,6 +62,18 @@ python main.py --recommend --user-id 1 --top-k 10
 python main.py --similar-items --item-id 42 --top-k 5
 python main.py --save-recommendations
 ```
+# 6. 可視化
+python　visualize.py --user-id 1 --top-k 5 --output network.html
+
+# 7. 精度指標
+python  evaluate.py
+
+Precision@    Ktop-K のうち正解の割合
+Recall@       Kテスト正解のうち top-K で捕捉した割合
+NDCG@         K正解が上位にあるほど高い順位重み付きスコア
+Hit Rate@     K1件以上当たったユーザーの割合
+MRR           最初の正解の順位の逆数の平均
+MAP@K         各正解位置の Precision の平均
 
 ## カテゴリ構造 (画像準拠)
 
