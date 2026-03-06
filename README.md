@@ -64,6 +64,7 @@ python main.py --save-recommendations
 
 # 6. 可視化
 python　visualize.py --user-id 1 --top-k 5 --output network.html
+ユーザーid:1 top-k:5の場合
 
 # 7. 精度指標
 python  evaluate.py
